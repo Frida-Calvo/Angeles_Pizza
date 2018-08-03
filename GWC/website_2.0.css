@@ -1,0 +1,32 @@
+/*button group for top of page*/
+
+.btn-group button {
+    background-color: #ffcccc; /* Light pink background */
+    color: white; /* White text */
+    padding: 10px 24px;  /*Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    font-size: 24px
+}
+
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    /* Prevent double borders */
+}
+
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #ffb3b3;
+}
